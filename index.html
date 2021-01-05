@@ -1,0 +1,236 @@
+ <!DOCTYPE html>
+
+ <html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Google</title>
+
+
+	<style>
+
+
+		.Site {
+		  display: flex;
+		  min-height: 100vh;
+		  flex-direction: column;
+		}
+
+		.Site-content {
+		  flex: 1;
+		}
+		.nav ul {
+		    margin: 0px;
+		    padding: 0px;
+		    list-style:none;
+		}
+
+		.nav a {
+		    padding: 1em;		    
+   			display: block;
+		    text-align:center;
+		    text-decoration: none;
+		}
+		.nav ul {
+		    display: flex; /*1*/
+		    flex-direction : row; /*2*/
+		    justify-content: flex-end; /*3*/
+			align-items: center;
+		    } 
+		}
+		#conteneur
+		{
+		    display: flex;
+		    flex-direction: column;
+		}		
+		#row-image{
+			display: flex;
+		    justify-content: center;
+		    margin-bottom: 15px;
+		}	
+		#row-searchform{
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+		    background: #fff;
+		    height: 69px;
+		    left: 0;
+		    width: 100%;			
+		}
+		#searchform{
+			background: #fff;
+		    display: flex;
+		    border: 1px solid #dfe1e5;
+		    box-shadow: none;
+		    border-radius: 24px;
+		    z-index: 3;
+		    height: 44px;
+		    margin: 0 auto;
+		    padding: 5px;
+		    width: 700px;
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: space-between;		    
+		}
+		#searchform:hover {
+		    background-color: #fff;
+		    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+		    border-color: rgba(223,225,229,0);
+
+		}
+
+		.searchform-img {
+		    padding: 5px;
+		}
+		#loupe{
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: flex-start;			
+		}
+		#micro{
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: flex-end;						
+		}		
+		#row-bouton{ 
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;	    			
+		 }		
+
+		 .boutton{
+		 	display: flex;
+  			align-items: center;
+		 	background-image: -webkit-linear-gradient(top,#f8f9fa,#f8f9fa);
+		    background-color: #f8f9fa;
+		    border: 1px solid #f8f9fa;
+		    border-radius: 4px;
+		    color: #3c4043;
+		    font-family: arial,sans-serif;
+		    font-size: 14px;
+		    margin: 11px 4px;
+	    	padding: 0 16px;
+		    height: 36px;
+		    min-width: 54px;
+		}
+
+		#row-lien {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;}	
+
+
+    #lien{border: 1px solid #70757a;
+    padding: 5px;
+    width: fit-content;
+}		 		
+
+		footer{
+			background-color:#f2f2f2;}
+
+		#row-footer1{
+ 	   text-align: left;
+ 	    border: 1px solid #dadce0;
+    	padding-top: 15px;
+    	padding-left: 5px;
+ 	}
+
+ 	#footer1-inside{
+    margin-left: 30px;
+    text-align: left;
+    color: rgba(0,0,0,.54);
+    padding-left: 27px;
+        font-size: 15px;
+}
+		#row-footer2{		    
+			display: flex;
+		    flex-direction: row;
+		    justify-content:space-around;
+
+		}
+		#leaf{
+			height: 30%;
+    margin: 2px;}	
+		#footer-mention1{
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+
+		}		
+		#footer-mention2{
+			display: flex;
+		    flex-direction: row;			
+	    justify-content: space-around;
+		}
+
+		.footer-mention-info{
+		        margin: 15px;		    			
+		}	
+		#row-footer3{		    
+			display: flex;
+		    flex-direction: row;}
+	</style>
+</head>
+
+
+
+	<body class="Site">
+
+<header>
+	<nav class="nav" role="navigation">
+    <ul clas="menu">
+        <li><a href="">Gmail</a></li>
+        <li><a href="">Image</a></li>
+        <li><a href=""> <img src="nav-grid.PNG"/></a></li>
+        <li><a href=""> <img src="nav-account.PNG"/></a></li>
+    </ul>
+	</nav>
+</header>	
+<main class="Site-content">
+	<div id="row-image"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" height="92">
+		
+	</div>
+	<div id="row-searchform">
+		<div id="searchform">
+			<div id="loupe">
+				<img class="searchform-img"  src="loupe.PNG"/>
+			</div>
+			<div id="micro">
+				<img class="searchform-img" src="micro.PNG"/>
+			</div>
+		</div >
+	</div>	
+	<div id="row-bouton">
+		<div class="boutton">Recherche Google</div>
+		<div class="boutton">J'ai de la chance</div>
+	</div>
+	<div id="row-lien">
+		<div id="lien"><a href="https://support.google.com/websearch/answer/9586983?p=fr_tos&visit_id=637427072354171291-4231467859&rd=1">Jugement du TJ de Paris du 12 février 2019</a>
+		</div>
+	</div>
+
+</main>
+  <footer>
+  		<div id="row-footer1"> <span id="footer1-inside">France</span></div>
+  		<div id="row-footer2">
+  			<div id="footer-mention1">
+  				<img id="leaf" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" class="r8PpOd" alt="Image représentant une feuille" data-iml="1609868708770" data-atf="1">
+  				<span> Neutre en carbone depuis 2007</span>
+  			</div>
+  			<div id="footer-mention2">
+	  			<div class="footer-mention-info">Info</div> 
+	  			<div class="footer-mention-info">Consommateurs</div> 
+	  			<div class="footer-mention-info">Confidentialité</div> 
+	  			<div class="footer-mention-info">Conditions</div> 
+	  			<div class="footer-mention-info">Paramètres</div>
+	  		</div>
+  		</div>
+  		<div id="row-footer3">
+  			<div class="footer-mention-info">Publicité</div>
+  			<div class="footer-mention-info">Entreprise</div>
+  			<div class="footer-mention-info">À propos</div>
+  			<div class="footer-mention-info">Comment fonctionne la recherche Google ?</div>
+  			
+  		</div>
+  </footer>	
+	</body>
+</html> 
